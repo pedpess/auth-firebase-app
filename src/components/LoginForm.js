@@ -21,7 +21,16 @@ class LoginForm extends React.Component {
             onChangeText={emailText => this.setState({ emailText })}
           />
         </CardItem>
-        <CardItem />
+        <CardItem>
+          <Input
+            secureTextEntry
+            autoCorrect={false}
+            placeholder="password"
+            label="Password"
+            value={this.state.passwordText}
+            onChangeText={passwordText => this.setState({ passwordText })}
+          />
+        </CardItem>
         <CardItem>
           <Button> Log in </Button>
         </CardItem>
